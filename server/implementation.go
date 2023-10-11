@@ -11,7 +11,6 @@ import (
 	"net/http"
 	"strconv"
 	"sync"
-	"yalk/config"
 
 	"github.com/AleRosmo/engine/client"
 	"github.com/AleRosmo/engine/database"
@@ -75,13 +74,13 @@ func (s *serverImpl) HandleEvent(eventWithMetadata *events.BaseEventWithMetadata
 	return handler.HandleEvent(ctx, baseEvent)
 }
 
-func (s *serverImpl) UpgradeHttpRequest(w http.ResponseWriter, r *http.Request, config *config.Config) (*websocket.Conn, error) {
+func (s *serverImpl) UpgradeHttpRequest(w http.ResponseWriter, r *http.Request, WebSocketCompressionMode string, WebSocketReadLimit string) (*websocket.Conn, error) {
 	var defaultOptions = &websocket.AcceptOptions{
-		CompressionMode:    getWebsocketConnectionMode(config.WebSocketCompressionMode),
+		CompressionMode:    getWebsocketConnectionMode(WebSocketCompressionMode),
 		InsecureSkipVerify: true,
 	}
 
-	readLimit, err := strconv.ParseInt(config.WebSocketReadLimit, 10, 64)
+	readLimit, err := strconv.ParseInt(WebSocketReadLimit, 10, 64)
 	if err != nil {
 		return nil, err
 	}

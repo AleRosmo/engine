@@ -1,7 +1,7 @@
 package server
 
 import (
-	"github.com/AleRosmo/engine/errors"
+	errors "github.com/AleRosmo/shared_errors"
 
 	"github.com/AleRosmo/engine/models/db"
 

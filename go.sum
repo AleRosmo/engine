@@ -1,3 +1,5 @@
+github.com/AleRosmo/shared_errors v0.0.0-20231011224936-2d211750e59f h1:i1y9IR+DgTmlr7Keydh+MI99QV7HhopgBtspV7qcJVM=
+github.com/AleRosmo/shared_errors v0.0.0-20231011224936-2d211750e59f/go.mod h1:nNf1Ky+59FOErWovRZfhFRJZy86g6rWOPGUlHQA+CXo=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/gin-contrib/sse v0.1.0 h1:Y/yl/+YNO8GZSjAhjMsSuLt29uWRFHdHYUb5lYOV9qE=

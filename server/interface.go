@@ -2,7 +2,6 @@ package server
 
 import (
 	"net/http"
-	"yalk/config"
 
 	"github.com/AleRosmo/engine/client"
 	"github.com/AleRosmo/engine/models/db"
@@ -20,7 +19,7 @@ type Server interface {
 	HandleEvent(*events.BaseEventWithMetadata) error
 	GetUserByID(uint) (*db.User, error)
 	GetUserByUsername(username string) (user *db.User, err error)
-	UpgradeHttpRequest(http.ResponseWriter, *http.Request, *config.Config) (*websocket.Conn, error)
+	UpgradeHttpRequest(w http.ResponseWriter, r *http.Request, WebSocketCompressionMode string, WebSocketReadLimit string) (*websocket.Conn, error)
 	AuthenticateUser(loginUser *db.User) (userID uint, err error)
 	CreateUser(user *db.User) (userID uint, err error)
 }
