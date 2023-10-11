@@ -24,20 +24,20 @@ import (
 )
 
 type serverImpl struct {
-	clients    map[uint]client.Client
-	mu         sync.Mutex
-	handlers   map[string]event.Handler
-	db         database.DatabaseOperations
-	sm         sessions.SessionManager
+	clients  map[uint]client.Client
+	mu       sync.Mutex
+	handlers map[string]event.Handler
+	db       database.DatabaseOperations
+
 	serializer serialization.SerializationStrategy
 }
 
-func NewServer(db database.DatabaseOperations, sm sessions.SessionManager, serializer serialization.SerializationStrategy) Server {
+func NewServer(db database.DatabaseOperations, serializer serialization.SerializationStrategy) Server {
 	s := &serverImpl{
-		clients:    make(map[uint]client.Client),
-		handlers:   make(map[string]event.Handler),
-		db:         db,
-		sm:         sm,
+		clients:  make(map[uint]client.Client),
+		handlers: make(map[string]event.Handler),
+		db:       db,
+
 		serializer: serializer,
 	}
 
