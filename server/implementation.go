@@ -13,7 +13,8 @@ import (
 	"sync"
 
 	"github.com/AleRosmo/engine/client"
-	"github.com/AleRosmo/engine/database"
+	"github.com/YalkChat/database"
+
 	"github.com/AleRosmo/engine/event"
 	"github.com/AleRosmo/engine/event/handlers"
 	"github.com/AleRosmo/engine/models/events"

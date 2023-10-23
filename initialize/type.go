@@ -1,7 +1,7 @@
 package initialize
 
 import (
-	"github.com/AleRosmo/engine/database"
+	"github.com/YalkChat/database"
 
 	"github.com/AleRosmo/engine/models/db"
 	"github.com/AleRosmo/engine/models/events"

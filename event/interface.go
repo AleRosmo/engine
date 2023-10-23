@@ -3,7 +3,8 @@ package event
 import (
 	"encoding/json"
 
-	"github.com/AleRosmo/engine/database"
+	"github.com/YalkChat/database"
+
 	"github.com/AleRosmo/engine/models/events"
 	"github.com/AleRosmo/engine/serialization"
 )

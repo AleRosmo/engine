@@ -1,8 +1,8 @@
 package initialize
 
 import (
-	"github.com/AleRosmo/engine/database"
 	"github.com/AleRosmo/engine/models/events"
+	"github.com/YalkChat/database"
 )
 
 // TODO: ChatType here has something wrong, I'm not sure why but it's wrong.

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/AleRosmo/engine/database"
 	"github.com/AleRosmo/engine/util"
+	"github.com/YalkChat/database"
 )
 
 // TODO: Break down further

@@ -1,8 +1,8 @@
 package initialize
 
 import (
-	"github.com/AleRosmo/engine/database"
 	"github.com/AleRosmo/engine/models/events"
+	"github.com/YalkChat/database"
 )
 
 func saveInitialSettings(dbCon database.DatabaseOperations) error {

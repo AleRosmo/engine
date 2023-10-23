@@ -1,7 +1,7 @@
 package initialize
 
 import (
-	"github.com/AleRosmo/engine/database"
+	"github.com/YalkChat/database"
 )
 
 func checkIsInitialized(dbConn database.DatabaseOperations) bool {
